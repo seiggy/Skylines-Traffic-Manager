@@ -25,7 +25,7 @@ namespace TrafficManager.UI
                     _buttonManualControl.focusedBgSprite = "ButtonMenu";
                     _buttonTimedMain.focusedBgSprite = "ButtonMenu";
 
-                    
+
                     //buttonLaneRestrictions.focusedBgSprite = "ButtonMenu";
                     _buttonCrosswalk.focusedBgSprite = "ButtonMenu";
                     _buttonClearTraffic.focusedBgSprite = "ButtonMenu";
@@ -66,7 +66,7 @@ namespace TrafficManager.UI
             relativePosition = new Vector3(10.48f, 80f);
 
             UILabel title = AddUIComponent<UILabel>();
-            title.text = "Traffic Manager";
+            title.text = "Traffic Manager Plus";
             title.relativePosition = new Vector3(65.0f, 5.0f);
 
             if (!LoadingExtension.PathfinderIncompatibility)
@@ -198,7 +198,7 @@ namespace TrafficManager.UI
 
             lock (Singleton<VehicleManager>.instance)
             {
-                foreach (var vehicle in 
+                foreach (var vehicle in
                     from vehicle in vehicleList
                     let vehicleData = Singleton<VehicleManager>.instance.m_vehicles.m_buffer[vehicle]
                     where vehicleData.Info.m_vehicleType == VehicleInfo.VehicleType.Car
