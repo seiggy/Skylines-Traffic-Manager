@@ -18,7 +18,7 @@ namespace TrafficManager.UI
             var button = (UIButton)uiView.AddUIComponent(typeof(UIButton));
 
             // Set the text to show on the button.
-            button.text = "Traffic Manager";
+            button.text = "Traffic Manager Plus";
 
             // Set the button dimensions.
             button.width = 150;
